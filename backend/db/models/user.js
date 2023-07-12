@@ -43,18 +43,7 @@ module.exports = (sequelize, DataTypes) => {
     }
 
     static associate(models) {
-      User.hasMany(
-        models.Group,
-        { foreignKey: 'organizerId', onDelete: 'CASCADE', hooks: true }
-      ),
-      User.hasMany(
-        models.Membership,
-        { foreignKey: 'memberId', onDelete: 'CASCADE', hooks: true }
-      ),
-      User.hasMany(
-        models.Attendance,
-        { foreignKey: 'userId', onDelete: 'CASCADE', hooks: true }
-      )
+
     }
   }
   User.init({
@@ -72,10 +61,14 @@ module.exports = (sequelize, DataTypes) => {
       }
     },
     firstName: {
-      type: DataTypes.STRING
+      type: DataTypes.STRING,
+      allowNull: false,
+      unique: false
     },
     lastName: {
-      type: DataTypes.STRING
+      type: DataTypes.STRING,
+      allowNull: false,
+      unique: true
     },
     email: {
       type: DataTypes.STRING(256),
