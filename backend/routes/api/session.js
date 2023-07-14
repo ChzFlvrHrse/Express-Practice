@@ -20,11 +20,21 @@ router.post('/', async (req, res, next) => {
     await setTokenCookie(res, user);
 
     return res.json({ user });
-})
+});
 
 router.delete('/', async (_req, res) => {
     res.clearCookie('token');
     return res.json({ message: "Log out successful"});
-})
+});
+
+router.get('/', restoreUser, (req, res) => {
+    const { user } = req;
+    if (user) {
+        return res.json({
+            user: user.toSafeObject()
+        })
+    }
+    return res.json({})
+});
 
 module.exports = router;
