@@ -46,8 +46,8 @@ module.exports = (sequelize, DataTypes) => {
 
     static associate(models) {
       User.hasMany(
-        models.Cars,
-        { foreignKey: 'OwnerId'}
+        models.Car,
+        { foreignKey: 'ownerId', onDelete: 'CASCADE', hooks: true }
       )
     }
   }

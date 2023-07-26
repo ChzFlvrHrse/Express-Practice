@@ -9,21 +9,55 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      model: {
+      carModel: {
         type: Sequelize.STRING,
-        allowNull: false
+        allowNull: false,
+        unique: false
       },
-      color: {
+      paint: {
         type: Sequelize.STRING,
-        allowNull: false
+        allowNull: false,
+        unique: false
       },
-      description: {
+      wheels: {
         type: Sequelize.STRING,
-        allowNull: false
+        allowNull: false,
+        unique: false
+      },
+      hitch: {
+        type: Sequelize.BOOLEAN,
+        allowNull: false,
+        unique: false
+      },
+      interior: {
+        type: Sequelize.STRING,
+        allowNull: false,
+        unique: false
+      },
+      seating: {
+        type: Sequelize.INTEGER,
+        allowNull: false,
+        unique: false
+      },
+      steering: {
+        type: Sequelize.STRING,
+        allowNull: false,
+        unique: false
+      },
+      enhanced: {
+        type: Sequelize.BOOLEAN,
+        allowNull: false,
+        unique: false
+      },
+      autopilot: {
+        type: Sequelize.BOOLEAN,
+        allowNull: false,
+        unique: false
       },
       price: {
         type: Sequelize.INTEGER,
-        allowNull: false
+        allowNull: false,
+        unique: false
       },
       ownerId: {
         type: Sequelize.INTEGER,

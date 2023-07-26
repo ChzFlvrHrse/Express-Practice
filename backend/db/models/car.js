@@ -1,7 +1,5 @@
 'use strict';
-const {
-  Model
-} = require('sequelize');
+const { Model, Validator } = require('sequelize');
 module.exports = (sequelize, DataTypes) => {
   class Car extends Model {
     /**
@@ -10,9 +8,13 @@ module.exports = (sequelize, DataTypes) => {
      * The `models/index` file will call this method automatically.
      */
     static associate(models) {
-      // define association here
+      Car.belongsTo(
+        models.User,
+        { foreignKey: 'ownerId' }
+      )
     }
   }
+  // add image column before
   Car.init({
     id: {
       allowNull: false,
@@ -20,18 +22,48 @@ module.exports = (sequelize, DataTypes) => {
       primaryKey: true,
       type: DataTypes.INTEGER
     },
-    model: {
+    carModel: {
       type: DataTypes.STRING,
       allowNull: false,
       unique: false
     },
-    color: {
+    paint: {
       type: DataTypes.STRING,
       allowNull: false,
       unique: false
     },
-    description: {
+    wheels: {
       type: DataTypes.STRING,
+      allowNull: false,
+      unique: false
+    },
+    hitch: {
+      type: DataTypes.BOOLEAN,
+      allowNull: false,
+      unique: false
+    },
+    interior: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      unique: false
+    },
+    seating: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      unique: false
+    },
+    steering: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      unique: false
+    },
+    enhanced: {
+      type: DataTypes.BOOLEAN,
+      allowNull: false,
+      unique: false
+    },
+    autopilot: {
+      type: DataTypes.BOOLEAN,
       allowNull: false,
       unique: false
     },
