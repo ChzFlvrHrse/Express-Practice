@@ -5,7 +5,7 @@ module.exports = {
   up: async (queryInterface, Sequelize) => {
     await queryInterface.bulkInsert('Cars', [
       {
-        carModel: 'Model S',
+        model: 'Model S',
         paint: 'Solid Black',
         wheels: '19" Tempest Wheels',
         hitch: false,
@@ -18,7 +18,7 @@ module.exports = {
         ownerId: 1
       },
       {
-        carModel: 'Model 3',
+        model: 'Model 3',
         paint: 'Pearl White Multi-Coat',
         wheels: '19" Sport Wheels',
         hitch: false,
@@ -31,7 +31,7 @@ module.exports = {
         ownerId: 2
       },
       {
-        carModel: 'Model X',
+        model: 'Model X',
         paint: 'Midnight Silver Metallic',
         wheels: '20" Cyberstream Wheels',
         hitch: true,
@@ -44,7 +44,7 @@ module.exports = {
         ownerId: 5
       },
       {
-        carModel: 'Model Y',
+        model: 'Model Y',
         paint: 'Deep Blue Metallic',
         wheels: '20" Induction Wheels',
         hitch: true,

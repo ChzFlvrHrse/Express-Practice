@@ -9,7 +9,7 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      carModel: {
+      model: {
         type: Sequelize.STRING
       },
       paint: {

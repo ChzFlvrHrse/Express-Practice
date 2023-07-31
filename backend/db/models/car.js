@@ -22,7 +22,7 @@ module.exports = (sequelize, DataTypes) => {
       primaryKey: true,
       type: DataTypes.INTEGER
     },
-    carModel: {
+    model: {
       type: DataTypes.STRING,
       allowNull: false,
       unique: false
