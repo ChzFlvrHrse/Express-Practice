@@ -49,6 +49,18 @@ module.exports = (sequelize, DataTypes) => {
         models.Car,
         { foreignKey: 'ownerId', onDelete: 'CASCADE', hooks: true }
       )
+      User.hasMany(
+        models.Charging,
+        { foreignKey: 'ownerId', onDelete: 'CASCADE', hooks: true }
+      )
+      User.hasMany(
+        models.Accessory,
+        { foreignKey: 'ownerId', onDelete: 'CASCADE', hooks: true }
+      )
+      User.hasMany(
+        models.Apparel,
+        { foreignKey: 'ownerId', onDelete: 'CASCADE', hooks: true }
+      )
     }
   }
   User.init({
