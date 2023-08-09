@@ -8,10 +8,7 @@ module.exports = (sequelize, DataTypes) => {
      * The `models/index` file will call this method automatically.
      */
     static associate(models) {
-      Car.belongsTo(
-        models.User,
-        { foreignKey: 'ownerId' }
-      )
+
     }
   }
   // add image column before
@@ -28,12 +25,27 @@ module.exports = (sequelize, DataTypes) => {
       unique: false
     },
     paint: {
-      type: DataTypes.STRING,
+      type: DataTypes.JSON,
+      allowNull: false,
+      unique: false
+    },
+    range: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      unique: false
+    },
+    topSpeed: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      unique: false
+    },
+    zeroSixty: {
+      type: DataTypes.DECIMAL,
       allowNull: false,
       unique: false
     },
     wheels: {
-      type: DataTypes.STRING,
+      type: DataTypes.ARRAY(DataTypes.STRING),
       allowNull: false,
       unique: false
     },
@@ -43,28 +55,18 @@ module.exports = (sequelize, DataTypes) => {
       unique: false
     },
     interior: {
-      type: DataTypes.STRING,
+      type: DataTypes.ARRAY(DataTypes.STRING),
       allowNull: false,
       unique: false
     },
     seating: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.ARRAY(DataTypes.INTEGER),
       allowNull: false,
       unique: false
     },
     steering: {
       type: DataTypes.STRING,
-      allowNull: false,
-      unique: false
-    },
-    enhanced: {
-      type: DataTypes.BOOLEAN,
-      allowNull: false,
-      unique: false
-    },
-    autopilot: {
-      type: DataTypes.BOOLEAN,
-      allowNull: false,
+      allowNull: true,
       unique: false
     },
     price: {
@@ -72,9 +74,10 @@ module.exports = (sequelize, DataTypes) => {
       allowNull: false,
       unique: false
     },
-    ownerId: {
+    savings: {
       type: DataTypes.INTEGER,
-      onDelete: 'CASCADE'
+      allowNull: false,
+      unique: false
     }
   }, {
     sequelize,

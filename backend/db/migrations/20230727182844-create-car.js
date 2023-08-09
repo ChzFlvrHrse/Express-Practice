@@ -13,22 +13,31 @@ module.exports = {
         type: Sequelize.STRING
       },
       paint: {
-        type: Sequelize.STRING
+        type: Sequelize.JSON
+      },
+      range: {
+        type: Sequelize.INTEGER
+      },
+      topSpeed: {
+        type: Sequelize.INTEGER
+      },
+      zeroSixty: {
+        type: Sequelize.DECIMAL
       },
       wheels: {
-        type: Sequelize.STRING
+        type: Sequelize.ARRAY
       },
       hitch: {
         type: Sequelize.BOOLEAN
       },
       interior: {
-        type: Sequelize.STRING
+        type: Sequelize.ARRAY
       },
       seating: {
         type: Sequelize.INTEGER
       },
       steering: {
-        type: Sequelize.STRING
+        type: Sequelize.ARRAY
       },
       enhanced: {
         type: Sequelize.BOOLEAN
@@ -39,7 +48,7 @@ module.exports = {
       price: {
         type: Sequelize.INTEGER
       },
-      ownerId: {
+      savings: {
         type: Sequelize.INTEGER
       },
       createdAt: {
