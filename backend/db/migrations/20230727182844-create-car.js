@@ -12,6 +12,9 @@ module.exports = {
       model: {
         type: Sequelize.STRING
       },
+      options: {
+        type: Sequelize.STRING
+      },
       paint: {
         type: Sequelize.JSON
       },
@@ -25,22 +28,19 @@ module.exports = {
         type: Sequelize.DECIMAL
       },
       wheels: {
-        type: Sequelize.ARRAY
+        type: Sequelize.JSON
       },
       hitch: {
         type: Sequelize.BOOLEAN
       },
       interior: {
-        type: Sequelize.ARRAY
+        type: Sequelize.JSON
       },
       seating: {
         type: Sequelize.INTEGER
       },
       steering: {
-        type: Sequelize.ARRAY
-      },
-      enhanced: {
-        type: Sequelize.BOOLEAN
+        type: Sequelize.JSON
       },
       autopilot: {
         type: Sequelize.BOOLEAN

@@ -24,6 +24,11 @@ module.exports = (sequelize, DataTypes) => {
       allowNull: false,
       unique: false
     },
+    options: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      unique: false
+    },
     paint: {
       type: DataTypes.JSON,
       allowNull: false,
@@ -45,7 +50,7 @@ module.exports = (sequelize, DataTypes) => {
       unique: false
     },
     wheels: {
-      type: DataTypes.ARRAY(DataTypes.STRING),
+      type: DataTypes.JSON,
       allowNull: false,
       unique: false
     },
@@ -55,7 +60,7 @@ module.exports = (sequelize, DataTypes) => {
       unique: false
     },
     interior: {
-      type: DataTypes.ARRAY(DataTypes.STRING),
+      type: DataTypes.JSON,
       allowNull: false,
       unique: false
     },
