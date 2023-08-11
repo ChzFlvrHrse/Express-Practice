@@ -1,7 +1,9 @@
 'use strict';
-const { Model, Validator } = require('sequelize');
+const {
+  Model
+} = require('sequelize');
 module.exports = (sequelize, DataTypes) => {
-  class Lifestyle extends Model {
+  class part extends Model {
     /**
      * Helper method for defining associations.
      * This method is not a part of Sequelize lifecycle.
@@ -11,7 +13,7 @@ module.exports = (sequelize, DataTypes) => {
       // define association here
     }
   }
-  Lifestyle.init({
+  part.init({
     id: {
       allowNull: false,
       autoIncrement: true,
@@ -33,13 +35,14 @@ module.exports = (sequelize, DataTypes) => {
       allowNull: false,
       unique: false
     },
-    ownerId: {
-      type: DataTypes.INTEGER,
-      onDelete: 'CASCADE'
+    img2: {
+      type: DataTypes.STRING,
+      allowNull: true,
+      unique: false
     }
   }, {
     sequelize,
-    modelName: 'Lifestyle',
+    modelName: 'Part',
   });
-  return Lifestyle;
+  return part;
 };

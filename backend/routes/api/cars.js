@@ -4,10 +4,7 @@ const router = express.Router();
 const { User, Car } = require('../../db/models');
 
 router.get('/', async (req, res) => {
-    const cars = await Car.findAll({
-        include: User,
-        where: { ownerId: 1 }
-    });
+    const cars = await Car.findAll();
     if ({ Cars: cars }) {
         return res.json(cars);
     } else {

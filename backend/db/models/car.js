@@ -30,7 +30,7 @@ module.exports = (sequelize, DataTypes) => {
       unique: false
     },
     paint: {
-      type: DataTypes.JSON,
+      type: DataTypes.TEXT,
       allowNull: false,
       unique: false
     },
@@ -50,7 +50,7 @@ module.exports = (sequelize, DataTypes) => {
       unique: false
     },
     wheels: {
-      type: DataTypes.JSON,
+      type: DataTypes.TEXT,
       allowNull: false,
       unique: false
     },
@@ -60,7 +60,7 @@ module.exports = (sequelize, DataTypes) => {
       unique: false
     },
     interior: {
-      type: DataTypes.JSON,
+      type: DataTypes.TEXT,
       allowNull: false,
       unique: false
     },

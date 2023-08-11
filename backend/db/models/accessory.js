@@ -8,10 +8,7 @@ module.exports = (sequelize, DataTypes) => {
      * The `models/index` file will call this method automatically.
      */
     static associate(models) {
-      Accessory.belongsTo(
-        models.User,
-        { foreignKey: 'ownerId' }
-      )
+
     }
   }
   Accessory.init({
@@ -40,10 +37,6 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.STRING,
       allowNull: true,
       unique: false
-    },
-    ownerId: {
-      type: DataTypes.INTEGER,
-      onDelete: 'CASCADE'
     }
   }, {
     sequelize,

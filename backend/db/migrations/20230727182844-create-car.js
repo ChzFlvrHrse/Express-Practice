@@ -16,7 +16,7 @@ module.exports = {
         type: Sequelize.STRING
       },
       paint: {
-        type: Sequelize.JSON
+        type: Sequelize.TEXT
       },
       range: {
         type: Sequelize.INTEGER
@@ -28,22 +28,19 @@ module.exports = {
         type: Sequelize.DECIMAL
       },
       wheels: {
-        type: Sequelize.JSON
+        type: Sequelize.TEXT
       },
       hitch: {
         type: Sequelize.BOOLEAN
       },
       interior: {
-        type: Sequelize.JSON
+        type: Sequelize.TEXT
       },
       seating: {
         type: Sequelize.INTEGER
       },
       steering: {
-        type: Sequelize.JSON
-      },
-      autopilot: {
-        type: Sequelize.BOOLEAN
+        type: Sequelize.TEXT
       },
       price: {
         type: Sequelize.INTEGER

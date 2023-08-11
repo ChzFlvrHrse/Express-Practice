@@ -8,10 +8,7 @@ module.exports = (sequelize, DataTypes) => {
      * The `models/index` file will call this method automatically.
      */
     static associate(models) {
-      Apparel.belongsTo(
-        models.User,
-        { foreignKey: 'ownerId' }
-      )
+      
     }
   }
   Apparel.init({
@@ -40,10 +37,6 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.STRING,
       allowNull: true,
       unique: false
-    },
-    ownerId: {
-      type: DataTypes.INTEGER,
-      onDelete: 'CASCADE'
     }
   }, {
     sequelize,

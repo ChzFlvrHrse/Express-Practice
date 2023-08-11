@@ -45,22 +45,7 @@ module.exports = (sequelize, DataTypes) => {
     }
 
     static associate(models) {
-      User.hasMany(
-        models.Car,
-        { foreignKey: 'ownerId', onDelete: 'CASCADE', hooks: true }
-      )
-      User.hasMany(
-        models.Charging,
-        { foreignKey: 'ownerId', onDelete: 'CASCADE', hooks: true }
-      )
-      User.hasMany(
-        models.Accessory,
-        { foreignKey: 'ownerId', onDelete: 'CASCADE', hooks: true }
-      )
-      User.hasMany(
-        models.Apparel,
-        { foreignKey: 'ownerId', onDelete: 'CASCADE', hooks: true }
-      )
+      
     }
   }
   User.init({
