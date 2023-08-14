@@ -8,7 +8,10 @@ module.exports = (sequelize, DataTypes) => {
      * The `models/index` file will call this method automatically.
      */
     static associate(models) {
-
+      Accessory.belongsTo(
+        models.Models,
+        { foreignKey: '' }
+      )
     }
   }
   Accessory.init({
@@ -19,6 +22,16 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.INTEGER
     },
     name: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      unique: false
+    },
+    area: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      unique: false
+    },
+    title: {
       type: DataTypes.STRING,
       allowNull: false,
       unique: false
