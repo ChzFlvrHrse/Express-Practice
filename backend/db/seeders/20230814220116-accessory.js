@@ -168,7 +168,7 @@ module.exports = {
         name: 'Model S',
         area: 'Exterior',
         title: 'Model S Car Cover',
-        price: '$400',
+        price: '$325 - $400',
         img: 'https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/studio/CAR_ACCESSORIES/MODEL_S/EXTERIOR/1017723-00-A_0.jpg',
         img2: 'https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/CAR_ACCESSORIES/MODEL_S/EXTERIOR/1017723-00-A_alt.jpg'
       },

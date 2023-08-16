@@ -8,7 +8,7 @@ module.exports = (sequelize, DataTypes) => {
      * The `models/index` file will call this method automatically.
      */
     static associate(models) {
-      
+
     }
   }
   Charging.init({
@@ -18,13 +18,18 @@ module.exports = (sequelize, DataTypes) => {
       primaryKey: true,
       type: DataTypes.INTEGER
     },
+    area: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      unique: false
+    },
     name: {
       type: DataTypes.STRING,
       allowNull: false,
       unique: false
     },
     price: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: false,
       unique: false
     },
