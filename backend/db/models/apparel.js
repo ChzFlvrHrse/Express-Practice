@@ -8,7 +8,7 @@ module.exports = (sequelize, DataTypes) => {
      * The `models/index` file will call this method automatically.
      */
     static associate(models) {
-      
+
     }
   }
   Apparel.init({
@@ -24,7 +24,7 @@ module.exports = (sequelize, DataTypes) => {
       unique: false
     },
     price: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: false,
       unique: false
     },
