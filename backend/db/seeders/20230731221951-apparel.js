@@ -579,6 +579,14 @@ module.exports = {
         price: '$70',
         img: 'https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/studio/LIFESTYLE/OUTERWEAR/JACKETS/5645680-00-A_0_2000.jpg',
         img2: 'https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/LIFESTYLE/OUTERWEAR/JACKETS/5645680-00-A_3.jpg'
+      },
+      {
+        category: 'Women',
+        type: 'Joggers',
+        name: "Women's Raven Joggers",
+        price: '$85',
+        img: 'https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/studio/LIFESTYLE/ACTIVEWEAR/TRAINING/1740270-00-A_0_2000.jpg',
+        img2: 'https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/LIFESTYLE/ACTIVEWEAR/TRAINING/1740270-00-A_1.jpg'
       }
     ])
   },
