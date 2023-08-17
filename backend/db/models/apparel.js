@@ -18,6 +18,16 @@ module.exports = (sequelize, DataTypes) => {
       primaryKey: true,
       type: DataTypes.INTEGER
     },
+    category: {
+      type: DataTypes.STRING,
+      allownul: false,
+      unique: false
+    },
+    type: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      unique: false
+    },
     name: {
       type: DataTypes.STRING,
       allowNull: false,
