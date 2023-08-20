@@ -18,7 +18,7 @@ module.exports = (sequelize, DataTypes) => {
       primaryKey: true,
       type: DataTypes.INTEGER
     },
-    area: {
+    category: {
       type: DataTypes.STRING,
       allowNull: false,
       unique: false
