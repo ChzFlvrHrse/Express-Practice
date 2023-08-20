@@ -587,6 +587,310 @@ module.exports = {
         price: '$85',
         img: 'https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/studio/LIFESTYLE/ACTIVEWEAR/TRAINING/1740270-00-A_0_2000.jpg',
         img2: 'https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/LIFESTYLE/ACTIVEWEAR/TRAINING/1740270-00-A_1.jpg'
+      },
+      {
+        category: 'Women',
+        type: 'Hats',
+        name: "CyberBear Trucker Hat",
+        price: '$35',
+        img: 'https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/LIFESTYLE/HEADWEAR/HATS/1943349-00-A_0_2000.jpg',
+        img2: 'https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/LIFESTYLE/HEADWEAR/HATS/1943349-00-A_1_2000.jpg'
+      },
+      {
+        category: 'Women',
+        type: 'Hats',
+        name: "Tempest Rope Hat",
+        price: '$40',
+        img: 'https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/LIFESTYLE/HEADWEAR/HATS/1860532-00-A_0_2000.jpg',
+        img2: 'https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/LIFESTYLE/HEADWEAR/HATS/1860532-00-A_1_2000.jpg'
+      },
+      {
+        category: 'Women',
+        type: 'Hats',
+        name: "Icon Suede Hat",
+        price: '$45',
+        img: 'https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/LIFESTYLE/HEADWEAR/HATS/1860533-00-A_0_2000.jpg',
+        img2: 'https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/LIFESTYLE/HEADWEAR/HATS/1860533-00-A_1_2000.jpg'
+      },
+      {
+        category: 'Women',
+        type: 'Hats',
+        name: "Aero Snapback Hat",
+        price: '$40',
+        img: 'https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/LIFESTYLE/HEADWEAR/HATS/1857156-00-A_0_2000.jpg',
+        img2: 'https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/LIFESTYLE/HEADWEAR/HATS/1857156-00-A_1_2000.jpg'
+      },
+      {
+        category: 'Women',
+        type: 'Hats',
+        name: "Cyber Rodeo Trucker Hat",
+        price: '$35',
+        img: 'https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/LIFESTYLE/HEADWEAR/HATS/1809152-00-A_3_2000.jpg',
+        img2: 'https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/LIFESTYLE/HEADWEAR/HATS/1809152-00-A_4_2000.jpg'
+      },
+      {
+        category: 'Women',
+        type: 'Hats',
+        name: "Relaxed T Logo Hat",
+        price: '$30',
+        img: 'https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/LIFESTYLE/HEADWEAR/HATS/1857705-00-A_0_2000.jpg',
+        img2: 'https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/LIFESTYLE/HEADWEAR/HATS/1857705-00-A_1_2000.jpg'
+      },
+      {
+        category: 'Women',
+        type: 'Hats',
+        name: "Relaxed Wordmark Hat",
+        price: '$30',
+        img: 'https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/LIFESTYLE/HEADWEAR/HATS/1856861-00-A_0_2000.jpg',
+        img2: 'https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/LIFESTYLE/HEADWEAR/HATS/1856861-00-A_1_2000.jpg'
+      },
+      {
+        category: 'Women',
+        type: 'Hats',
+        name: "Cybertruck Graffiti Trucker Hat",
+        price: '$35',
+        img: 'https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/studio/LIFESTYLE/HEADWEAR/HATS/1657891-00-A_0_2000.jpg',
+        img2: 'https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/LIFESTYLE/HEADWEAR/HATS/1657891-00-A_1.jpg'
+      },
+      {
+        category: 'Women',
+        type: 'Hats',
+        name: "Seamless Fitted T Logo Hat",
+        price: '$35',
+        img: 'https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/studio/LIFESTYLE/HEADWEAR/HATS/1657916-00-A_0_2000.jpg',
+        img2: 'https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/LIFESTYLE/HEADWEAR/HATS/1657916-00-A_1.jpg'
+      },
+      {
+        category: 'Women',
+        type: 'Hats',
+        name: "Cybertruck Graffiti Cuffed Beanie",
+        price: '$30',
+        img: 'https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/studio/LIFESTYLE/HEADWEAR/BEANIES/1740413-00-A_0_2000.jpg',
+        img2: 'https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/LIFESTYLE/HEADWEAR/BEANIES/1740413-00-A_1.jpg'
+      },
+      {
+        category: 'Women',
+        type: 'Hats',
+        name: "Thermal Cuffed Beanie",
+        price: '$35',
+        img: 'https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/studio/LIFESTYLE/HEADWEAR/BEANIES/1740417-00-A_0_2000.jpg',
+        img2: 'https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/LIFESTYLE/HEADWEAR/BEANIES/1740417-00-A_1.jpg'
+      },
+      {
+        category: 'Women',
+        type: 'Hats',
+        name: "T Logo Cuffed Beanie",
+        price: '$30',
+        img: 'https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/studio/LIFESTYLE/HEADWEAR/BEANIES/1740407-00-A_0_2000.jpg',
+        img2: 'https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/LIFESTYLE/HEADWEAR/BEANIES/1740407-00-A_1.jpg'
+      },
+      {
+        category: 'Women',
+        type: 'Hats',
+        name: "Tesla Wordmark Beanie",
+        price: '$30',
+        img: 'https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/studio/LIFESTYLE/HEADWEAR/BEANIES/1740408-00-A_0_2000.jpg',
+        img2: 'https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/LIFESTYLE/HEADWEAR/BEANIES/1740408-00-A_1.jpg'
+      },
+      {
+        category: 'Women',
+        type: 'Socks',
+        name: "Cybertruck Graffiti Sock Set",
+        price: '$30',
+        img: 'https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/studio/LIFESTYLE/SOCKS/1741613-00-A_1_2000.jpg',
+        img2: 'https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/studio/LIFESTYLE/SOCKS/1741613-00-A_1_2000.jpg'
+      },
+      {
+        category: 'Women',
+        type: 'Socks',
+        name: "Cybertruck Icon Sock Set",
+        price: '$30',
+        img: 'https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/studio/LIFESTYLE/SOCKS/1741615-00-A_1_2000.jpg',
+        img2: 'https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/studio/LIFESTYLE/SOCKS/1741615-00-A_1_2000.jpg'
+      },
+      {
+        category: 'Women',
+        type: 'Socks',
+        name: "Tesla Wordmark Sock Set",
+        price: '$30',
+        img: 'https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/studio/LIFESTYLE/SOCKS/1741611-00-A_1_2000.jpg',
+        img2: 'https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/studio/LIFESTYLE/SOCKS/1741611-00-A_1_2000.jpg'
+      },
+      {
+        category: 'Kids',
+        type: 'Best Sellers',
+        name: "Kids Cyberquad Bomber Jacke",
+        price: '$50',
+        img: 'https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/studio/LIFESTYLE/KIDS/TOPS/1742702-00-A_0_2000.jpg',
+        img2: 'https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/LIFESTYLE/KIDS/TOPS/1742702-00-A_1.jpg'
+      },
+      {
+        category: 'Kids',
+        type: 'Best Sellers',
+        name: "Kids T Logo Cuffed Beanie",
+        price: '$25',
+        img: 'https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/studio/LIFESTYLE/KIDS/HATS/1740410-00-A_0_2000.jpg',
+        img2: 'https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/LIFESTYLE/KIDS/HATS/1740410-00-A_1.jpg'
+      },
+      {
+        category: 'Kids',
+        type: 'Best Sellers',
+        name: "Kids Cybertruck Long Sleeve Tee",
+        price: '$30',
+        img: 'https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/studio/LIFESTYLE/KIDS/TOPS/1742694-00-A_1_2000.jpg',
+        img2: 'https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/LIFESTYLE/KIDS/TOPS/1742694-00-A_3.jpg'
+      },
+      {
+        category: 'Kids',
+        type: 'Tees',
+        name: "Kids 3D T Logo Tee",
+        price: '$25',
+        img: 'https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/studio/LIFESTYLE/TOPS/TSHIRTS/7652453-00-A_0_2000.jpg',
+        img2: 'https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/LIFESTYLE/TOPS/TSHIRTS/7652453-00-A_1.jpg'
+      },
+      {
+        category: 'Kids',
+        type: 'Tees',
+        name: "Kids Scribble T Logo Tee",
+        price: '$25',
+        img: 'https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/studio/LIFESTYLE/KIDS/TOPS/8529318-00-A_0_2000.jpg',
+        img2: 'https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/LIFESTYLE/KIDS/TOPS/8529318-00-A_1.jpg'
+      },
+      {
+        category: 'Kids',
+        type: 'Tees',
+        name: "Kids 3D Large Wordmark Tee",
+        price: '$25',
+        img: 'https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/studio/LIFESTYLE/KIDS/TOPS/8764766-00-A_0_2000.jpg',
+        img2: 'https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/LIFESTYLE/KIDS/TOPS/8764766-00-A_2.jpg'
+      },
+      {
+        category: 'Kids',
+        type: 'Tees',
+        name: "Kids Cybertruck Tee",
+        price: '$25',
+        img: 'https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/studio/LIFESTYLE/KIDS/TOPS/8529342-00-A_0_2000.jpg',
+        img2: 'https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/LIFESTYLE/KIDS/TOPS/8529342-00-A_1.jpg'
+      },
+      {
+        category: 'Kids',
+        type: 'Tees',
+        name: "Kids Let the Sun Shine Tee",
+        price: '$25',
+        img: 'https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/studio/LIFESTYLE/KIDS/TOPS/1753970-00-A_zoomed_01.jpg',
+        img2: 'https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/LIFESTYLE/KIDS/TOPS/1753970-00-A_1_2000.jpg'
+      },
+      {
+        category: 'Kids',
+        type: 'Tees',
+        name: "Kids Racing Stripe Tee",
+        price: '$25',
+        img: 'https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/studio/LIFESTYLE/KIDS/TOPS/8529366-00-A_0_2000.jpg',
+        img2: 'https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/LIFESTYLE/KIDS/TOPS/8529366-00-A_1.jpg'
+      },
+      {
+        category: 'Kids',
+        type: 'Tees',
+        name: "Kids Cybertruck Long Sleeve Tee",
+        price: '$30',
+        img: 'https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/studio/LIFESTYLE/KIDS/TOPS/1742694-00-A_1_2000.jpg',
+        img2: 'https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/LIFESTYLE/KIDS/TOPS/1742694-00-A_3.jpg'
+      },
+      {
+        category: 'Kids',
+        type: 'Tees',
+        name: "Kids Checkered Tee",
+        price: '$20',
+        img: 'https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/studio/LIFESTYLE/KIDS/TOPS/100042301_0_2000.jpg',
+        img2: 'https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/LIFESTYLE/KIDS/TOPS/100042301_alt.jpg'
+      },
+      {
+        category: 'Kids',
+        type: 'Onesies',
+        name: "Zero Emissions (Almost) Onesie",
+        price: '$25',
+        img: 'https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/studio/LIFESTYLE/KIDS/ONESIES/0_emissions_onesie_2.jpg',
+        img2: 'https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/studio/LIFESTYLE/KIDS/ONESIES/0_emissions_onesie_2.jpg'
+      },
+      {
+        category: 'Kids',
+        type: 'Onesies',
+        name: "Made on Earth by Humans Onesie",
+        price: '$25',
+        img: 'https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/studio/LIFESTYLE/KIDS/ONESIES/1473809-00-A_1_2000.jpg',
+        img2: 'https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/LIFESTYLE/KIDS/ONESIES/1473809-00-A_alt.jpg'
+      },
+      {
+        category: 'Kids',
+        type: 'Onesies',
+        name: "Scribble T Logo Onesie",
+        price: '$25',
+        img: 'https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/studio/LIFESTYLE/KIDS/ONESIES/8529387-00-A_0_2000.jpg',
+        img2: 'https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/LIFESTYLE/KIDS/ONESIES/8529387-00-A_1.jpg'
+      },
+      {
+        category: 'Kids',
+        type: 'Onesies',
+        name: "Kids Corp Jacket",
+        price: '$50',
+        img: 'https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/LIFESTYLE/KIDS/JACKETS/1643504-00-A_0_2000.jpg',
+        img2: 'https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/LIFESTYLE/KIDS/JACKETS/1643504-00-A_2.jpg'
+      },
+      {
+        category: 'Kids',
+        type: 'Onesies',
+        name: "Kids Cyberquad Bomber Jacket",
+        price: '$50',
+        img: 'https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/studio/LIFESTYLE/KIDS/TOPS/1742702-00-A_0_2000.jpg',
+        img2: 'https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/LIFESTYLE/KIDS/TOPS/1742702-00-A_1.jpg'
+      },
+      {
+        category: 'Kids',
+        type: 'Hats',
+        name: "Kids T Logo Cuffed Beanie",
+        price: '$25',
+        img: 'https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/studio/LIFESTYLE/KIDS/HATS/1740410-00-A_0_2000.jpg',
+        img2: 'https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/LIFESTYLE/KIDS/HATS/1740410-00-A_1.jpg'
+      },
+      {
+        category: 'Kids',
+        type: 'Hats',
+        name: "Kids Relaxed T Logo Hat",
+        price: '$20',
+        img: 'https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/studio/LIFESTYLE/KIDS/HATS/1693867-02-A_0_2000.jpg',
+        img2: 'https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/LIFESTYLE/KIDS/HATS/1693867-02-A_1.jpg'
+      },
+      {
+        category: 'Kids',
+        type: 'Hats',
+        name: "Kids Relaxed Wordmark Hat",
+        price: '$20',
+        img: 'https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/studio/LIFESTYLE/KIDS/HATS/1693862-00-A_0_2000.jpg',
+        img2: 'https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/LIFESTYLE/KIDS/HATS/1693862-00-A_1.jpg'
+      },
+      {
+        category: 'Kids',
+        type: 'Socks',
+        name: "Kids Cybertruck Graffiti Sock Set",
+        price: '$20',
+        img: 'https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/studio/LIFESTYLE/KIDS/SOCKS/1741619-00-A_1_2000.jpg',
+        img2: 'https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/studio/LIFESTYLE/KIDS/SOCKS/1741619-00-A_1_2000.jpg'
+      },
+      {
+        category: 'Kids',
+        type: 'Socks',
+        name: "Kids Cybertruck Icon Sock Set",
+        price: '$20',
+        img: 'https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/studio/LIFESTYLE/KIDS/SOCKS/1741621-00-A_1_2000.jpg',
+        img2: 'https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/studio/LIFESTYLE/KIDS/SOCKS/1741621-00-A_1_2000.jpg'
+      },
+      {
+        category: 'Kids',
+        type: 'Socks',
+        name: "Kids Tesla Wordmark Sock Set",
+        price: '$20',
+        img: 'https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/studio/LIFESTYLE/KIDS/SOCKS/1741617-00-A_1_2000.jpg',
+        img2: 'https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/studio/LIFESTYLE/KIDS/SOCKS/1741617-00-A_1_2000.jpg'
       }
     ])
   },
