@@ -5,6 +5,23 @@ module.exports = {
   up: async (queryInterface, Sequelize) => {
     await queryInterface.bulkInsert('Cars', [
       {
+        model: 'Model S Standard Range',
+        options: 'TS17',
+        paint: '{"Pearl White Multi-Coat": "PSW", ""Solid Black": "BSB", "Midnight Silver Metallic": "MNG", "Deep Blue Metallic": "PSB", "Ultra Red": "R01"}',
+        range: 320,
+        topSpeed: 149,
+        zeroSixty: 3.7,
+        wheels: '{"19`` Tempest Wheels": "S91", "21`` Arachnid Wheels": "S11"}',
+        hitch: false,
+        interior: '{"All Black": "BE00", "Black and White": "WW00", "Cream": "CW00"}',
+        seating: '{"5": "Included"}',
+        steering: '{"Steering Wheel": "T03", "Yoke Steering": "T0Y"}',
+        price: 78490,
+        capacity: 28,
+        drive: 'Dual Motor',
+        savings: 6600
+      },
+      {
         model: 'Model S',
         options: 'TS13',
         paint: '{"Pearl White Multi-Coat": "PSW", ""Solid Black": "BSB", "Midnight Silver Metallic": "MNG", "Deep Blue Metallic": "PSB", "Ultra Red": "R01"}',
@@ -14,9 +31,11 @@ module.exports = {
         wheels: '{"21`` Tempest Wheels": "S11", "21`` Arachnid Wheels": "S91"}',
         hitch: false,
         interior: '{"All Black": "BE00", "Black and White": "WW00", "Cream": "CW00"}',
-        seating: false,
+        seating: '{"5": "Included"}',
         steering: '{"Steering Wheel": "T03", "Yoke Steering": "T0Y"}',
         price: 88490,
+        capacity: 28,
+        drive: 'AWD Dual Motor',
         savings: 6600
       },
       {
@@ -29,9 +48,11 @@ module.exports = {
         wheels: '{"19`` Tempest Wheels": "S12", "21`` Arachnid Wheels": "S92"}',
         hitch: false,
         interior: '{"All Black": "BC00", "Black and White": "WC00", "Cream": "CC00"}',
-        seating: false,
+        seating: '{"5": "Included"}',
         steering: '{"Steering Wheel": "T03", "Yoke Steering": "T0Y"}',
         price: 108490,
+        capacity: 28,
+        drive: 'AWD Tri Motor',
         savings: 6600
       },
       {
@@ -44,9 +65,11 @@ module.exports = {
         wheels: '{"18`` Aero Wheels": "40B", "19`` Sport Wheels": "41B"}',
         hitch: false,
         interior: '{"All Black": "BB1", "Black and White": "BW1"}',
-        seating: false,
+        seating: '{"5": "Included"}',
         steering: null,
         price: 40240,
+        capacity: 23,
+        drive: 'RWD',
         savings: 12300
       },
       {
@@ -59,9 +82,11 @@ module.exports = {
         wheels: '{"18`` Aero Wheels": "40B", "19`` Sport Wheels": "41B"}',
         hitch: true,
         interior: '{"All Black": "PB1", "Black and White": "PW1"}',
-        seating: false,
+        seating: '{"5": "Included"}',
         steering: null,
         price: 47240,
+        capacity: 23,
+        drive: 'AWD Dual Motor',
         savings: 12300
       },
       {
@@ -74,10 +99,29 @@ module.exports = {
         wheels: '{"20`` Überturbine Wheels": "33D"}',
         hitch: true,
         interior: '{"All Black": "PB1", "Black and White": "PW1"}',
-        seating: false,
+        seating: '{"5": "Included"}',
         steering: null,
         price: 53240,
+        capacity: 23,
+        drive: 'AWD Dual Motor',
         savings: 12300
+      },
+      {
+        model: 'Model X Standard Range',
+        options: 'TX17',
+        paint: '{"Pearl White Multi-Coat": "PSW", "Solid Black": "BSB", "Midnight Silver Metallic": "MNG", "Deep Blue Metallic": "PSB", "Ultra Red": "R01"}',
+        range: 269,
+        topSpeed: 149,
+        zeroSixty: 4.4,
+        wheels: '{"20`` Cyberstream Wheels": "X00", "22`` Turbine Wheels": "X20"}',
+        hitch: true,
+        interior: '{"All Black": "BE00", "Black and White": "WW00", "Cream": "CW00"}',
+        seating: '{"5": "Included", "6": 6500, "7": 3500}',
+        steering: '{"Steering Wheel": "T03", "Yoke Steering": "T0Y"}',
+        price: 88490,
+        capacity: 88,
+        drive: 'AWD Dual Motor',
+        savings: 6600
       },
       {
         model: 'Model X',
@@ -89,9 +133,11 @@ module.exports = {
         wheels: '{"20`` Cyberstream Wheels": "X00", "22`` Turbine Wheels": "X20"}',
         hitch: true,
         interior: '{"All Black": "BE00", "Black and White": "WW00", "Cream": "CW00"}',
-        seating: true,
+        seating: '{"5": "Included", "6": 6500, "7": 3500}',
         steering: '{"Steering Wheel": "T03", "Yoke Steering": "T0Y"}',
         price: 98490,
+        capacity: 88,
+        drive: 'AWD Dual Motor',
         savings: 6600
       },
       {
@@ -104,9 +150,11 @@ module.exports = {
         wheels: '{"20`` Cyberstream Wheels": "X01", "22`` Turbine Wheels": "X21"}',
         hitch: true,
         interior: '{"All Black": "BC00", "Black and White": "WC00", "Cream": "CC00"}',
-        seating: true,
+        seating: '{"6": "Included"}',
         steering: '{"Steering Wheel": "T03", "Yoke Steering": "T0Y"}',
         price: 108490,
+        capacity: 88,
+        drive: 'AWD Tri Motor',
         savings: 6600
       },
       {
@@ -119,9 +167,11 @@ module.exports = {
         wheels: '{"20`` Cyberstream Wheels": "Y19B", "22`` Turbine Wheels": "Y20P"}',
         hitch: true,
         interior: '{"All Black": "NPB0", "Black and White": "NPW0"}',
-        seating: true,
+        seating: '{"5": "Included"}',
         steering: null,
         price: 47740,
+        capacity: 76,
+        drive: 'AWD Dual Motor',
         savings: 13300
       },
       {
@@ -134,13 +184,15 @@ module.exports = {
         wheels: '{"19`` Gemini Wheels": "Y19B", "22`` Induction Wheels": "Y20P"',
         hitch: true,
         interior: '{"All Black": "NPB0", "Black and White": "NPW0"}',
-        seating: true,
+        seating: '{"5": "Included", "7": 2500}',
         steering: null,
         price: 50490,
+        capacity: 76,
+        drive: 'AWD Dual Motor',
         savings: 13300
       },
       {
-        model: 'Model Y Long Performance',
+        model: 'Model Y Performance',
         options: 'TY05',
         paint: '{"Midnight Silver Metallic": "MNG", "Pearl White Multi-Coat": "PSW", "Deep Blue Metallic": "PSB", "Solid Black": "BSB", "Red Multi-Coat": "PMR"}',
         range: 303,
@@ -149,9 +201,11 @@ module.exports = {
         wheels: '{"21`` Überturbine Wheels": "Y19B"}',
         hitch: true,
         interior: '{"All Black": "NPB0", "Black and White": "NPW0"}',
-        seating: true,
+        seating: '{"5": "Included"}',
         steering: null,
         price: 54490,
+        capacity: 76,
+        drive: 'AWD Dual Motor',
         savings: 13300
       }
     ], {});

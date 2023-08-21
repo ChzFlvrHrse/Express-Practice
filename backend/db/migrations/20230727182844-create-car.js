@@ -37,13 +37,19 @@ module.exports = {
         type: Sequelize.TEXT
       },
       seating: {
-        type: Sequelize.INTEGER
+        type: Sequelize.TEXT
       },
       steering: {
         type: Sequelize.TEXT
       },
       price: {
         type: Sequelize.INTEGER
+      },
+      capacity: {
+        type: Sequelize.INTEGER
+      },
+      drive: {
+        type: Sequelize.STRING
       },
       savings: {
         type: Sequelize.INTEGER

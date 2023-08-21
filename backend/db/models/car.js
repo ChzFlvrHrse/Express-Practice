@@ -65,7 +65,7 @@ module.exports = (sequelize, DataTypes) => {
       unique: false
     },
     seating: {
-      type: DataTypes.ARRAY(DataTypes.INTEGER),
+      type: DataTypes.TEXT,
       allowNull: false,
       unique: false
     },
@@ -76,6 +76,16 @@ module.exports = (sequelize, DataTypes) => {
     },
     price: {
       type: DataTypes.INTEGER,
+      allowNull: false,
+      unique: false
+    },
+    capacity: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      unique: false
+    },
+    drive: {
+      type: DataTypes.STRING,
       allowNull: false,
       unique: false
     },
