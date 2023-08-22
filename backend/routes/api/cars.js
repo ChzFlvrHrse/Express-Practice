@@ -1,12 +1,14 @@
 const express = require('express');
+const Sequelize = require('sequelize');
+const Op = Sequelize.Op;
 const router = express.Router();
 
 const { User, Car } = require('../../db/models');
 
 router.get('/', async (req, res) => {
     const cars = await Car.findAll();
-    if ({ Cars: cars }) {
-        return res.json(cars);
+    if (cars) {
+        return res.json({Cars: cars});
     } else {
         res.status(404);
         res.json({
@@ -15,5 +17,27 @@ router.get('/', async (req, res) => {
         })
     }
 })
+
+router.get('/model/:modelSign', async (req, res) => {
+    const { modelSign } = req.params
+    const model = `Model ${modelSign}`
+
+    const cars = await Car.findAll({
+        where: {
+            model: { [Op.startsWith]: [model] }
+        }
+    })
+    if (cars) {
+        return res.json({Cars: cars})
+    } else {
+        res.status(404);
+        res.json({
+            message: "Model couldn't be found",
+            statusCode: 404
+        })
+    }
+})
+
+
 
 module.exports = router;

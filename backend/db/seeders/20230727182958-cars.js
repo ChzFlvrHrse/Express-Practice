@@ -7,7 +7,7 @@ module.exports = {
       {
         model: 'Model S Standard Range',
         options: 'TS17',
-        paint: '{"Pearl White Multi-Coat": "PSW", ""Solid Black": "BSB", "Midnight Silver Metallic": "MNG", "Deep Blue Metallic": "PSB", "Ultra Red": "R01"}',
+        paint: '{"Pearl White Multi-Coat": "PSW", "Solid Black": "BSB", "Midnight Silver Metallic": "MNG", "Deep Blue Metallic": "PSB", "Ultra Red": "R01"}',
         range: 320,
         topSpeed: 149,
         zeroSixty: 3.7,
