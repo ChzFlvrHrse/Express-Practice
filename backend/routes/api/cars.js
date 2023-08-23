@@ -3,11 +3,11 @@ const Sequelize = require('sequelize');
 const Op = Sequelize.Op;
 const router = express.Router();
 
-const { User, Car } = require('../../db/models');
+const { Car } = require('../../db/models');
 
 router.get('/', async (req, res) => {
     const cars = await Car.findAll();
-    if (cars) {
+    if (cars.length) {
         return res.json({Cars: cars});
     } else {
         res.status(404);
@@ -27,7 +27,7 @@ router.get('/model/:modelSign', async (req, res) => {
             model: { [Op.startsWith]: [model] }
         }
     })
-    if (cars) {
+    if (cars.length) {
         return res.json({Cars: cars})
     } else {
         res.status(404);
@@ -37,7 +37,5 @@ router.get('/model/:modelSign', async (req, res) => {
         })
     }
 })
-
-
 
 module.exports = router;

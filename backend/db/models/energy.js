@@ -1,7 +1,7 @@
 'use strict';
 const { Model, Validator } = require('sequelize');
 module.exports = (sequelize, DataTypes) => {
-  class Charging extends Model {
+  class Energy extends Model {
     /**
      * Helper method for defining associations.
      * This method is not a part of Sequelize lifecycle.
@@ -11,7 +11,7 @@ module.exports = (sequelize, DataTypes) => {
 
     }
   }
-  Charging.init({
+  Energy.init({
     id: {
       allowNull: false,
       autoIncrement: true,
@@ -45,7 +45,7 @@ module.exports = (sequelize, DataTypes) => {
     }
   }, {
     sequelize,
-    modelName: 'Charging',
+    modelName: 'Energy',
   });
-  return Charging;
+  return Energy;
 };

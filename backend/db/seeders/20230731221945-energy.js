@@ -3,7 +3,7 @@
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up (queryInterface, Sequelize) {
-    await queryInterface.bulkInsert('Chargings', [
+    await queryInterface.bulkInsert('Energies', [
       {
         category: 'Chargers',
         name: 'Wall Connector',
@@ -99,6 +99,6 @@ module.exports = {
   },
 
   async down (queryInterface, Sequelize) {
-    await queryInterface.bulkDelete('Chargings')
+    await queryInterface.bulkDelete('Energies')
   }
 };
