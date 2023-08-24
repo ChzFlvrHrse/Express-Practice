@@ -26,9 +26,14 @@ module.exports = (sequelize, DataTypes) => {
       allowNull: false,
       unique: false
     },
+    price: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      unique: false
+    },
     size: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
       unique: true
     },
     quantity: {

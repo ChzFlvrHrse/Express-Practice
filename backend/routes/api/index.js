@@ -6,6 +6,7 @@ const energyRouter = require('./energy');
 const accessoryRouter = require('./accessory');
 const apparelRouter = require('./apparel');
 const lifestyleRouter = require('./lifestyle');
+const cartRouter = require('./cart');
 const { restoreUser } = require('../../utils/auth.js');
 
 router.use(restoreUser);
@@ -23,6 +24,8 @@ router.use('/accessory', accessoryRouter);
 router.use('/apparel', apparelRouter);
 
 router.use('/lifestyle', lifestyleRouter);
+
+router.use('/cart', cartRouter);
 
 router.post('/test', (req, res) => {
     res.json({ requestBody: req.body });
