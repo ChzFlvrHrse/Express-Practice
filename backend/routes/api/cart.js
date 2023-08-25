@@ -20,7 +20,7 @@ router.get('/:userId', async (req, res) => {
     } else {
         res.status(404);
         res.json({
-            message: "User cart couldn't be found or you're not authorized to view this cart",
+            message: "Users cart couldn't be found or you're not authorized to view this cart",
             statusCode: 404
         })
     }

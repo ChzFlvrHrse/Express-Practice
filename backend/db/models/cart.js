@@ -41,7 +41,12 @@ module.exports = (sequelize, DataTypes) => {
       allowNull: false,
       unique: false,
       validate: {
-        max: 5
+        max: 5,
+        tooMuch(value) {
+          if (value > 5) {
+            throw new Error("Quantity cannot exceed 5")
+          }
+        }
       }
     },
     userId: {
