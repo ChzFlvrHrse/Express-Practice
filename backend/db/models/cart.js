@@ -39,7 +39,10 @@ module.exports = (sequelize, DataTypes) => {
     quantity: {
       type: DataTypes.INTEGER,
       allowNull: false,
-      unique: false
+      unique: false,
+      validate: {
+        max: 5
+      }
     },
     userId: {
       type: DataTypes.INTEGER,
