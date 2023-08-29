@@ -5,17 +5,16 @@ const router = express.Router();
 
 const { Cart } = require('../../db/models');
 
-router.get('/:userId', async (req, res) => {
-    const { userId } = req.params;
+router.get('/:currUserId', async (req, res) => {
+    const { currUserId } = req.params;
     const { user } = req;
-
-    console.log(userId, user)
+    const currId = user.id
 
     const cart = await Cart.findAll({
-        where: { userId: userId }
+        where: { userId: currUserId }
     });
 
-    if (cart.length && userId === user) {
+    if (cart.length && currUserId === currId.toString()) {
         return res.json({Cart: cart});
     } else {
         res.status(404);
@@ -35,10 +34,10 @@ router.post('/:currUserId', async (req, res) => {
 
     if (currUserId === currId.toString()) {
         await Cart.create({ item, price, size, quantity, userId });
-        const findCart = await Cart.findAll({
+        const cart = await Cart.findAll({
             where: { userId: userId }
         })
-        return res.json(findCart);
+        return res.json({Cart: cart});
     } else {
         res.status(404);
         res.json({
@@ -67,6 +66,31 @@ router.put('/:currUserId/update', async (req, res) => {
         res.status(404);
         return res.json({
             message: "User cart couldn't be found or you're not authorized to update this cart",
+            statusCode: 404
+        })
+    }
+});
+
+router.delete('/:currUserId/:itemId/delete', async (req, res) => {
+    const { currUserId, itemId } = req.params;
+    const { user } = req;
+    const currId = user.id;
+
+    const deleteItem = await Cart.findOne({
+        where: {id: itemId}
+    });
+    console.log(deleteItem);
+
+    if (deleteItem && currUserId === currId.toString()) {
+        await deleteItem.destroy();
+        return res.json({
+            message: "Successfully deleted",
+            statusCode: 200
+        })
+    } else {
+        res.status(400);
+        res.json({
+            message: "Item couldn't be found",
             statusCode: 404
         })
     }
