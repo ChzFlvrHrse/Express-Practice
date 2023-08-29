@@ -76,10 +76,7 @@ router.delete('/:currUserId/:itemId/delete', async (req, res) => {
     const { user } = req;
     const currId = user.id;
 
-    const deleteItem = await Cart.findOne({
-        where: {id: itemId}
-    });
-    console.log(deleteItem);
+    const deleteItem = await Cart.findByPk(itemId);
 
     if (deleteItem && currUserId === currId.toString()) {
         await deleteItem.destroy();
