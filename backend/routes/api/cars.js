@@ -20,7 +20,7 @@ router.get('/', async (req, res) => {
 
 router.get('/model/:modelSign', async (req, res) => {
     const { modelSign } = req.params
-    const model = `Model ${modelSign}`
+    const model = `Model ${modelSign.toUpperCase()}`
 
     const cars = await Car.findAll({
         where: {

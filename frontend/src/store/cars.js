@@ -15,7 +15,7 @@ const getModel = model => {
     }
 };
 
-export const getAllCarsThunk = () => async (dispatch) => {
+export const allCarsThunk = () => async (dispatch) => {
     const response = await fetch('/api/cars');
 
     if (response.ok) {
@@ -50,5 +50,9 @@ const carsReducer = (state = initialState, action) => {
             })
             return state;
         }
+        default:
+            return state
     };
 };
+
+export default carsReducer;

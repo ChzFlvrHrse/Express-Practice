@@ -8,7 +8,7 @@ const { Apparel } = require('../../db/models');
 router.get('/', async (req, res) => {
     const apparel = await Apparel.findAll();
     if (apparel.length) {
-        return res.json({Accessories: apparel});
+        return res.json({Apparel: apparel});
     } else {
         res.status(404);
         res.json({
@@ -26,7 +26,7 @@ router.get('/:category', async (req, res) => {
         where: { category: gender }
     });
     if (cat.length) {
-        return res.json({Accessories: cat});
+        return res.json({Apparel: cat});
     } else {
         res.status(404);
         res.json({

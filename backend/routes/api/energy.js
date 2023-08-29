@@ -16,6 +16,6 @@ router.get('/', async (req, res) => {
             statusCode: 404
         })
     }
-})
+});
 
 module.exports = router;

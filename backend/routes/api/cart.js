@@ -5,16 +5,15 @@ const router = express.Router();
 
 const { Cart } = require('../../db/models');
 
-router.get('/:currUserId', async (req, res) => {
-    const { currUserId } = req.params;
+router.get('/', async (req, res) => {
     const { user } = req;
-    const currId = user.id
+    const userId = user.id
 
     const cart = await Cart.findAll({
-        where: { userId: currUserId }
+        where: { userId }
     });
 
-    if (cart.length && currUserId === currId.toString()) {
+    if (cart.length) {
         return res.json({Cart: cart});
     } else {
         res.status(404);
@@ -25,17 +24,17 @@ router.get('/:currUserId', async (req, res) => {
     }
 });
 
-router.post('/:currUserId', async (req, res) => {
-    const { currUserId } = req.params;
+router.post('/new', async (req, res) => {
+    // const { currUserId } = req.params;
     const { item, price, size, quantity, userId } = req.body;
 
     const { user } = req;
     const currId = user.id;
 
-    if (currUserId === currId.toString()) {
+    if (userId === currId) {
         await Cart.create({ item, price, size, quantity, userId });
         const cart = await Cart.findAll({
-            where: { userId: userId }
+            where: { userId }
         })
         return res.json({Cart: cart});
     } else {
@@ -47,20 +46,19 @@ router.post('/:currUserId', async (req, res) => {
     }
 });
 
-router.put('/:currUserId/update', async (req, res) => {
-    const { currUserId } = req.params;
+router.put('/update', async (req, res) => {
     const { item, price, size, quantity, userId } = req.body;
     const { user } = req;
-    const currId = user.id;
+    const currUser = user.id;
 
     const currCart = await Cart.findOne({
         where: {item, size, userId}
     });
 
-    if (currCart && currUserId === currId.toString()) {
+    if (currCart && userId === currUser) {
         const updateCart = currCart.set({ item, price, size, quantity, userId });
         await updateCart.save();
-        const newCart = await Cart.findAll({where: {userId}});
+        const newCart = await Cart.findAll({where: { userId }});
         return res.json(newCart);
     } else {
         res.status(404);
@@ -71,19 +69,20 @@ router.put('/:currUserId/update', async (req, res) => {
     }
 });
 
-router.delete('/:currUserId/:itemId/delete', async (req, res) => {
-    const { currUserId, itemId } = req.params;
+router.delete('/:itemId/delete', async (req, res) => {
+    const { itemId } = req.params;
     const { user } = req;
-    const currId = user.id;
+    const currUser = user.id;
 
     const deleteItem = await Cart.findByPk(itemId);
+    const userId = deleteItem.userId;
 
-    if (deleteItem && currUserId === currId.toString()) {
+    if (deleteItem && userId === currUser) {
         await deleteItem.destroy();
-        return res.json({
-            message: "Successfully deleted",
-            statusCode: 200
-        })
+        const cart = await Cart.findAll({
+            where: { userId }
+        });
+        return res.json({Cart: cart})
     } else {
         res.status(400);
         res.json({
