@@ -114,4 +114,4 @@ const cartReducer = (state = initialState, action) => {
     }
 };
 
-export default cart;
+export default cartReducer;
