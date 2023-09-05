@@ -21,6 +21,7 @@ const initialState = {};
 const energyReducer = (state = initialState, action) => {
     switch(action.type) {
         case GET_ENERGY: {
+            state = {...state}
             action.energy.Energy.forEach(power => {
                 state[power.id] = power;
             })

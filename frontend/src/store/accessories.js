@@ -39,12 +39,14 @@ const initialState = {};
 const accessoriesReducer = (state = initialState, action) => {
     switch(action.type) {
         case GET_ACCESSORIES: {
+            state = {...state}
             action.accessories.Accessories.forEach(acc => {
                 state[acc.id] = acc;
             })
             return state;
         }
         case GET_MODEL_ACCESSORIES: {
+            state = {...state}
             action.accessories.Accessories.forEach(acc => {
                 state[acc.id] = acc;
             })

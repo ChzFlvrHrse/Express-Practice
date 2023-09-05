@@ -85,24 +85,28 @@ const initialState = {};
 const cartReducer = (state = initialState, action) => {
     switch(action.type) {
         case GET_CART: {
+            state = {...state}
             action.cart.Cart.forEach(cart => {
                 state[cart.id] = cart;
             })
             return state
         }
         case ADD_ITEM: {
+            state = {...state}
             action.item.Cart.forEach(item => {
                 state[item.id] = item;
             })
             return state
         }
         case UPDATE_ITEM: {
+            state = {...state}
             action.item.Cart.forEach(item => {
                 state[item.id] = item;
             })
             return state
         }
         case DELETE_ITEM: {
+            state = {...state}
             action.item.Cart.forEach(cart => {
                 state[cart.id] = cart;
             })

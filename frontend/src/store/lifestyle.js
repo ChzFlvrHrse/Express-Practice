@@ -21,6 +21,7 @@ const initialState = {};
 const lifestyleReducer = (state = initialState, action) => {
     switch(action.type) {
         case GET_LIFESTYLE: {
+            state = {...state}
             action.lifestyle.Lifestyle.forEach(life => {
                 state[life.id] = life;
             })

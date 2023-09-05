@@ -1,5 +1,5 @@
 const GET_CARS = "cars/allCars";
-const GET_MODEL = "cars/allModel";
+const GET_MODEL = "cars/getModel";
 
 const allCars = cars => {
     return {
@@ -39,12 +39,14 @@ const initialState = {};
 const carsReducer = (state = initialState, action) => {
     switch(action.type) {
         case GET_CARS: {
+            state = {...state}
             action.cars.Cars.forEach(car => {
                 state[car.id] = car;
             })
             return state;
         }
         case GET_MODEL: {
+            state = {...state}
             action.model.Cars.forEach(model => {
                 state[model.id] = model;
             })

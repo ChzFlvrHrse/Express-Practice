@@ -1,10 +1,22 @@
 import { createStore, combineReducers, applyMiddleware, compose } from "redux";
-import thunk from "redux-thunk";
+import thunk from 'redux-thunk';
 import logger from 'redux-logger';
-import session from './session';
+import sessionReducer from './session';
+import carsReducer from './cars';
+import energyReducer from './energy';
+import apparelReducer from './apparel';
+import accessoriesReducer from './accessories';
+import lifestyleReducer from './lifestyle';
+import cartReducer from "./cart";
 
 const rootReducer = combineReducers({
-    session
+    session: sessionReducer,
+    cars: carsReducer,
+    energy: energyReducer,
+    apparel: apparelReducer,
+    accessories: accessoriesReducer,
+    lifestyle: lifestyleReducer,
+    cart: cartReducer
 })
 
 let enhancer;

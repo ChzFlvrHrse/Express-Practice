@@ -39,15 +39,18 @@ const initialState = {};
 const apparelReducer = (state = initialState, action) => {
     switch(action.type) {
         case GET_APPAREL: {
+            state = {...state}
             action.apparel.Apparel.forEach(app => {
                 state[app.id] = app;
             })
             return state;
         }
         case GET_CATEGORY: {
+            state = {...state}
             action.cat.Apparel.forEach(app => {
                 state[app.id] = app;
             })
+            return state
         }
         default:
             return state
