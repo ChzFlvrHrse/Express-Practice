@@ -59,7 +59,7 @@ router.put('/update', async (req, res) => {
         const updateCart = currCart.set({ item, price, size, quantity, userId });
         await updateCart.save();
         const newCart = await Cart.findAll({where: { userId }});
-        return res.json(newCart);
+        return res.json({Cart: newCart});
     } else {
         res.status(404);
         return res.json({
