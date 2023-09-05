@@ -35,7 +35,7 @@ export const getCartThunk = () => async (dispatch) => {
     const response = await fetch('api/cart');
 
     if (response.ok) {
-        cart = response.json();
+        let cart = response.json();
         dispatch(getCart(cart));
         return cart;
     }
@@ -69,7 +69,7 @@ export const updateItemThunk = (item, price, size, quantity, userId) => async (d
     }
 }
 
-export const deleteItemThunk = (itemId, user) => async (req, res) => {
+export const deleteItemThunk = (itemId, user) => async (dispatch) => {
     const response = await fetch(`/api/${itemId}/delete`, {
         method: "DELETE"
     })

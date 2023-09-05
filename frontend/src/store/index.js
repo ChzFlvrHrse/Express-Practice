@@ -8,9 +8,11 @@ import apparelReducer from './apparel';
 import accessoriesReducer from './accessories';
 import lifestyleReducer from './lifestyle';
 import cartReducer from "./cart";
+import allUserReducer from "./AllUsers";
 
 const rootReducer = combineReducers({
     session: sessionReducer,
+    allUser: allUserReducer,
     cars: carsReducer,
     energy: energyReducer,
     apparel: apparelReducer,
