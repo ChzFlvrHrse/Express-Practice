@@ -28,10 +28,10 @@ export default function NavBar() {
     return (
         <nav id="nav">
             <div id="logo">
-                <NavLink exact to='/'>THESLA</NavLink>
+                <NavLink exact to='/'>T E S L A</NavLink>
             </div>
             <div id="middle-bar">
-                <div className="drop">Vehicles</div>
+                <div className="drop" id="drop-models">Vehicles</div>
                 <div className="models-drop">
                     <div className="models">
                         <NavLink exact to='/order/modelS'><img src={ModelS} alt='Model S' /></NavLink>
@@ -64,7 +64,7 @@ export default function NavBar() {
                 </div>
 
                 <div>
-                    <div className="drop">Energy</div>
+                    <div className="drop" id="drop-energy">Energy</div>
                     <div className="energy-drop">
                         <div className="energy">
                             <NavLink exact to='/order/solarPanels'><img src={SolarPanels} alt='Solar Panels' /></NavLink>
@@ -98,7 +98,7 @@ export default function NavBar() {
 
                 </div>
                 <div>
-                    <div className="drop">Charging</div>
+                    <div className="drop" id="drop-charging">Charging</div>
                     <div className="charging-drop">
                         <div className="charging">
                             <NavLink exact to='/order/charging'><img src={Charging} alt='Charging' /></NavLink>
@@ -124,7 +124,7 @@ export default function NavBar() {
                     </div>
                 </div>
                 <div>
-                    <div className="drop">Discover</div>
+                    <div className="drop" id="drop-discover">Discover</div>
                     <div className="discover-drop">
                         <div className="discover">
                             <div>Resources</div>
@@ -153,7 +153,7 @@ export default function NavBar() {
 
                 </div>
                 <div>
-                    <div className="drop">Shop</div>
+                    <div className="drop" id="drop-shop">Shop</div>
                     <div className="shop-drop">
                         <div className="shop">
                             <NavLink exact to='/order/charging2'><img src={Charging2} alt='Charging' /></NavLink>
@@ -175,8 +175,9 @@ export default function NavBar() {
                 </div>
             </div>
             <div id="left-bar">
-                <NavLink to='/support'><i class="fa-thin fa-circle-question"></i></NavLink>
-                <NavLink to='/singin'><i class="fa-thin fa-circle-user"></i></NavLink>
+                <NavLink to='/support'><i class="fa-regular fa-circle-question"></i></NavLink>
+                <NavLink to='/language' id="globe"><i class="fa-solid fa-globe"></i></NavLink>
+                <NavLink to='/singin'><i class="fa-regular fa-circle-user"></i></NavLink>
             </div>
         </nav>
     )
