@@ -1,4 +1,4 @@
-import React, { useState, useEffect, Nav } from "react";
+import React, { useState, useEffect } from "react";
 // import { useDispatch, useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
 // import { getAllUsersThunk } from "../../store/AllUsers";
@@ -25,8 +25,22 @@ import Lifestyle from './shop-pics/Lifestyle.avif';
 import "./NavBar.css"
 
 export default function NavBar() {
+    const [scrollTop, setScrollTop] = useState(true);
+
+    useEffect(() => {
+        const handleScroll = event => {
+            setScrollTop(window.scrollY === 0);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
     return (
-        <nav id="nav">
+        <nav id={scrollTop ? 'nav' : 'nav-not-top'}>
             <div id="logo">
                 <NavLink exact to='/'>T E S L A</NavLink>
             </div>
@@ -34,31 +48,31 @@ export default function NavBar() {
                 <div className="drop" id="drop-models">Vehicles</div>
                 <div className="models-drop">
                     <div className="models">
-                        <NavLink exact to='/order/modelS'><img src={ModelS} alt='Model S' /></NavLink>
+                        <NavLink to='/order/modelS'><img src={ModelS} alt='Model S' /></NavLink>
                         <div>
                             <NavLink className='learn'>Learn</NavLink>
                             <NavLink className='order'>Order</NavLink>
                         </div>
                     </div>
                     <div className="models">
-                        <NavLink exact to='/order/model3'><img src={Model3} alt='Model 3' /></NavLink>
+                        <NavLink to='/order/model3'><img src={Model3} alt='Model 3' /></NavLink>
                         <div>
-                            <NavLink exact to='/learn/model3' className='learn'>Learn</NavLink>
-                            <NavLink exact to='/order/model3' className='order'>Order</NavLink>
+                            <NavLink to='/learn/model3' className='learn'>Learn</NavLink>
+                            <NavLink to='/order/model3' className='order'>Order</NavLink>
                         </div>
                     </div>
                     <div className="models">
-                        <NavLink exact to='/order/modelX'><img src={ModelX} alt='Model X' /></NavLink>
+                        <NavLink to='/order/modelX'><img src={ModelX} alt='Model X' /></NavLink>
                         <div>
-                            <NavLink exact to='/learn/modelX' className='learn'>Learn</NavLink>
-                            <NavLink exact to='/order/modelX' className='order'>Order</NavLink>
+                            <NavLink to='/learn/modelX' className='learn'>Learn</NavLink>
+                            <NavLink to='/order/modelX' className='order'>Order</NavLink>
                         </div>
                     </div>
                     <div className="models">
-                        <NavLink exact to='/order/modelY'><img src={ModelY} alt='Model Y' /></NavLink>
+                        <NavLink to='/order/modelY'><img src={ModelY} alt='Model Y' /></NavLink>
                         <div>
-                            <NavLink exact to='/learn/modelY' className='learn'>Learn</NavLink>
-                            <NavLink exact to='/order/modelY' className='order'>Order</NavLink>
+                            <NavLink to='/learn/modelY' className='learn'>Learn</NavLink>
+                            <NavLink to='/order/modelY' className='order'>Order</NavLink>
                         </div>
                     </div>
                 </div>
@@ -67,58 +81,58 @@ export default function NavBar() {
                     <div className="drop" id="drop-energy">Energy</div>
                     <div className="energy-drop">
                         <div className="energy">
-                            <NavLink exact to='/order/solarPanels'><img src={SolarPanels} alt='Solar Panels' /></NavLink>
+                            <NavLink to='/order/solarPanels'><img src={SolarPanels} alt='Solar Panels' /></NavLink>
                             <div>
-                                <NavLink exact to='/learn/solarPanels'>Learn</NavLink>
-                                <NavLink exact to='/order/solarPanels'>Order</NavLink>
+                                <NavLink to='/learn/solarPanels'>Learn</NavLink>
+                                <NavLink to='/order/solarPanels'>Order</NavLink>
                             </div>
                         </div>
                         <div className="energy">
-                            <NavLink exact to='/order/solarRoof'><img src={SolarRoof} alt='Solar Roof' /></NavLink>
+                            <NavLink to='/order/solarRoof'><img src={SolarRoof} alt='Solar Roof' /></NavLink>
                             <div>
-                                <NavLink exact to='/learn/solarRoof'>Learn</NavLink>
-                                <NavLink exact to='/order/solarRoof'>Order</NavLink>
+                                <NavLink to='/learn/solarRoof'>Learn</NavLink>
+                                <NavLink to='/order/solarRoof'>Order</NavLink>
                             </div>
                         </div>
                         <div className="energy">
-                            <NavLink exact to='/order/powerwall'><img src={Powerwall} alt='Powerwall' /></NavLink>
+                            <NavLink to='/order/powerwall'><img src={Powerwall} alt='Powerwall' /></NavLink>
                             <div>
-                                <NavLink exact to='/learn/powerwall'>Learn</NavLink>
-                                <NavLink exact to='/order/powerwall'>Order</NavLink>
+                                <NavLink to='/learn/powerwall'>Learn</NavLink>
+                                <NavLink to='/order/powerwall'>Order</NavLink>
                             </div>
                         </div>
                         <div className="energy">
-                            <NavLink exact to='/order/megapack'><img src={Megapack} alt='Megapack' /></NavLink>
+                            <NavLink to='/order/megapack'><img src={Megapack} alt='Megapack' /></NavLink>
                             <div>
-                                <NavLink exact to='/learn/megapack'>Learn</NavLink>
-                                <NavLink exact to='/order/megapack'>Order</NavLink>
+                                <NavLink to='/learn/megapack'>Learn</NavLink>
+                                <NavLink to='/order/megapack'>Order</NavLink>
                             </div>
                         </div>
                     </div>
-
                 </div>
+                
                 <div>
                     <div className="drop" id="drop-charging">Charging</div>
                     <div className="charging-drop">
                         <div className="charging">
-                            <NavLink exact to='/order/charging'><img src={Charging} alt='Charging' /></NavLink>
+                            <NavLink to='/order/charging'><img src={Charging} alt='Charging' /></NavLink>
                             <div>
-                                <NavLink exact to='/learn/charging'>Learn</NavLink>
-                                <NavLink exact to='/order/charging'>Order</NavLink>
+                                <NavLink to='/learn/charging'>Learn</NavLink>
+                                <NavLink to='/order/charging'>Order</NavLink>
                             </div>
                         </div>
                         <div className="charging">
-                            <NavLink exact to='/order/homeCharging'><img src={HomeCharging} alt='Home Charging' /></NavLink>
+                            <NavLink to='/order/homeCharging'><img src={HomeCharging} alt='Home Charging' /></NavLink>
                             <div>
-                                <NavLink exact to='/learn/homeCharging'>Learn</NavLink>
-                                <NavLink exact to='/order/homeCharging'>Order</NavLink>
+                                <NavLink to='/learn/homeCharging'>Learn</NavLink>
+                                <NavLink to='/order/homeCharging'>Order</NavLink>
                             </div>
                         </div>
                         <div className="charging">
-                            <NavLink exact to='/order/supercharging'><img src={Supercharging} alt='Supercharging' /></NavLink>
+                            <NavLink to='/order/supercharging'><img src={Supercharging} alt='Supercharging' /></NavLink>
                             <div>
-                                <NavLink exact to='/learn/supercharging'>Learn</NavLink>
-                                <NavLink exact to='/order/supercharging'>Order</NavLink>
+                                <NavLink to='/learn/supercharging'>Learn</NavLink>
+                                <NavLink to='/order/supercharging'>Order</NavLink>
                             </div>
                         </div>
                     </div>
@@ -129,24 +143,24 @@ export default function NavBar() {
                         <div className="discover">
                             <div>Resources</div>
                             <div>
-                                <NavLink exact to='/drive'>Demo Drive</NavLink>
-                                <NavLink exact to='/insurance'>Insurance</NavLink>
-                                <NavLink exact to='/guides'>Video Guides</NavLink>
-                                <NavLink exact to='/stories'>Customer Stories</NavLink>
-                                <NavLink exact to='/events'>Events</NavLink>
+                                <NavLink to='/drive'>Demo Drive</NavLink>
+                                <NavLink to='/insurance'>Insurance</NavLink>
+                                <NavLink to='/guides'>Video Guides</NavLink>
+                                <NavLink to='/stories'>Customer Stories</NavLink>
+                                <NavLink to='/events'>Events</NavLink>
                             </div>
                             <div>Location Services</div>
                             <div>
-                                <NavLink exact to='/find'>Find Us</NavLink>
-                                <NavLink exact to='/planner'>Trip Planner</NavLink>
-                                <NavLink exact to='/collision'>Find a Collision Center</NavLink>
-                                <NavLink exact to='/installer'>Find a Certified Installer</NavLink>
+                                <NavLink to='/find'>Find Us</NavLink>
+                                <NavLink to='/planner'>Trip Planner</NavLink>
+                                <NavLink to='/collision'>Find a Collision Center</NavLink>
+                                <NavLink to='/installer'>Find a Certified Installer</NavLink>
                             </div>
                             <div>Company</div>
                             <div>
-                                <NavLink exact to='/about'>About</NavLink>
-                                <NavLink exact to='/careers'>Careers</NavLink>
-                                <NavLink exact to='/investor'>Investor Relations</NavLink>
+                                <NavLink to='/about'>About</NavLink>
+                                <NavLink to='/careers'>Careers</NavLink>
+                                <NavLink to='/investor'>Investor Relations</NavLink>
                             </div>
                         </div>
                     </div>
@@ -156,28 +170,28 @@ export default function NavBar() {
                     <div className="drop" id="drop-shop">Shop</div>
                     <div className="shop-drop">
                         <div className="shop">
-                            <NavLink exact to='/order/charging2'><img src={Charging2} alt='Charging' /></NavLink>
-                            <NavLink exact to='/order/charging2'>Charging</NavLink>
+                            <NavLink to='/order/charging2'><img src={Charging2} alt='Charging' /></NavLink>
+                            <NavLink to='/order/charging2'>Charging</NavLink>
                         </div>
                         <div className="shop">
-                            <NavLink exact to='/order/accessories'><img src={VehicleAccessories} alt='Vehicle Accessories' /></NavLink>
-                            <NavLink exact to='/order/accessories'>Vehicle Accessories</NavLink>
+                            <NavLink to='/order/accessories'><img src={VehicleAccessories} alt='Vehicle Accessories' /></NavLink>
+                            <NavLink to='/order/accessories'>Vehicle Accessories</NavLink>
                         </div>
                         <div className="shop">
-                            <NavLink exact to='/order/apparel'><img src={Apparel} alt='Apparel' /></NavLink>
-                            <NavLink exact to='/order/apparel'>Apparel</NavLink>
+                            <NavLink to='/order/apparel'><img src={Apparel} alt='Apparel' /></NavLink>
+                            <NavLink to='/order/apparel'>Apparel</NavLink>
                         </div>
                         <div className="shop">
-                            <NavLink exact to='/order/lifestyle'><img src={Lifestyle} alt='Lifestyle' /></NavLink>
-                            <NavLink exact to='/order/lifestyle'>Lifestyle</NavLink>
+                            <NavLink to='/order/lifestyle'><img src={Lifestyle} alt='Lifestyle' /></NavLink>
+                            <NavLink to='/order/lifestyle'>Lifestyle</NavLink>
                         </div>
                     </div>
                 </div>
             </div>
-            <div id="left-bar">
+            <div id="right-bar">
                 <NavLink to='/support'><i class="fa-regular fa-circle-question"></i></NavLink>
                 <NavLink to='/language' id="globe"><i class="fa-solid fa-globe"></i></NavLink>
-                <NavLink to='/singin'><i class="fa-regular fa-circle-user"></i></NavLink>
+                <NavLink to='/teslaaccount'><i class="fa-regular fa-circle-user"></i></NavLink>
             </div>
         </nav>
     )
