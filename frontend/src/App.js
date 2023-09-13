@@ -17,7 +17,7 @@ function App() {
     <BrowserRouter>
       <NavBar />
       <Routes>
-        <Route exact path="/" element={<Home />}/>
+        {/* <Route exact path="/" element={<Home />}/> */}
       </Routes>
     </BrowserRouter>
   );
