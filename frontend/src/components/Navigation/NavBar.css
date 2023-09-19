@@ -72,6 +72,21 @@
     display: none;
 }
 
-#drop-models:hover #logo a {
-    color: black
+.models-drop {
+    display: flex;
+    background-color: #ffffff;
+    margin-top: -1rem;
+    margin-left: -1rem;
+    margin-right: -1rem;
+}
+
+.models {
+    display: block;
+    align-items: center;
+}
+
+.models a img {
+    height: 15rem;
+    width: 12rem;
+    object-fit: contain;
 }
