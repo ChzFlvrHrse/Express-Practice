@@ -74,6 +74,7 @@
 
 .models-drop {
     display: flex;
+    justify-content: center;
     background-color: #ffffff;
     margin-top: -1rem;
     margin-left: -1rem;
@@ -82,11 +83,29 @@
 
 .models {
     display: block;
-    align-items: center;
+    justify-content: center;
 }
 
 .models a img {
     height: 15rem;
-    width: 12rem;
+    width: 13rem;
     object-fit: contain;
+}
+
+.modelTag, .learnOrder {
+    display: flex;
+    justify-content: center;
+}
+
+.learnOrder a {
+    display: flex;
+    justify-content: center;
+    color: #7e8083;
+    width: 30%;
+}
+
+.modelTag {
+    font-family: "Gotham SSm", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-weight: 500;
+    font-size: 17px;
 }

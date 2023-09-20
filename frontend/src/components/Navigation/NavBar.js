@@ -199,32 +199,32 @@ export default function NavBar() {
                 <div className="models-drop">
                     <div className="models">
                         <NavLink to='/order/modelS'><img src={ModelS} alt='Model S' /></NavLink>
-                        <div>Model S</div>
-                        <div>
+                        <h3 className="modelTag">Model S</h3>
+                        <div className="learnOrder">
                             <NavLink className='learn'>Learn</NavLink>
                             <NavLink className='order'>Order</NavLink>
                         </div>
                     </div>
                     <div className="models">
                         <NavLink to='/order/model3'><img src={Model3} alt='Model 3' /></NavLink>
-                        <div>Model 3</div>
-                        <div>
+                        <h3 className="modelTag">Model 3</h3>
+                        <div className="learnOrder">
                             <NavLink to='/learn/model3' className='learn'>Learn</NavLink>
                             <NavLink to='/order/model3' className='order'>Order</NavLink>
                         </div>
                     </div>
                     <div className="models">
                         <NavLink to='/order/modelX'><img src={ModelX} alt='Model X' /></NavLink>
-                        <div>Model X</div>
-                        <div>
+                        <h3 className="modelTag">Model X</h3>
+                        <div className="learnOrder">
                             <NavLink to='/learn/modelX' className='learn'>Learn</NavLink>
                             <NavLink to='/order/modelX' className='order'>Order</NavLink>
                         </div>
                     </div>
                     <div className="models">
                         <NavLink to='/order/modelY'><img src={ModelY} alt='Model Y' /></NavLink>
-                        <div>Model Y</div>
-                        <div>
+                        <h3 className="modelTag">Model Y</h3>
+                        <div className="learnOrder">
                             <NavLink to='/learn/modelY' className='learn'>Learn</NavLink>
                             <NavLink to='/order/modelY' className='order'>Order</NavLink>
                         </div>
