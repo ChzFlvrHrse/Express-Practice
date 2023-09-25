@@ -207,7 +207,7 @@ export default function NavBar() {
                     </div>
                     <div className="models">
                         <NavLink to='/order/model3'><img src={Model3} alt='Model 3' /></NavLink>
-                        <h1 className="modelTag">Model 3</h1>
+                        <h2 className="modelTag">Model 3</h2>
                         <div className="learnOrder">
                             <NavLink to='/learn/model3' className='learn'>Learn</NavLink>
                             <NavLink to='/order/model3' className='order'>Order</NavLink>
