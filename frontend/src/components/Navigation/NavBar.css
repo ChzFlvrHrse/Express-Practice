@@ -84,12 +84,17 @@
 .models {
     display: block;
     justify-content: center;
+    height: 15rem;
 }
 
 .models a img {
-    height: 15rem;
+    height: 7rem;
     width: 13rem;
     object-fit: contain;
+}
+
+.models h3 {
+    margin-top: 0rem;
 }
 
 .modelTag, .learnOrder {
