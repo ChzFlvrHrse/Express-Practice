@@ -47,36 +47,36 @@ export default function NavBar() {
                 </div>
                 <div id="middle-bar">
                     <div className="drop" id="drop-models">Vehicles</div>
-                    {/* <div className="models-drop">
-                    <div className="models">
-                        <NavLink to='/order/modelS'><img src={ModelS} alt='Model S' /></NavLink>
-                        <div>
-                            <NavLink className='learn'>Learn</NavLink>
-                            <NavLink className='order'>Order</NavLink>
+                    <div className="models-drop">
+                        <div className="models">
+                            <NavLink to='/order/modelS'><img src={ModelS} alt='Model S' /></NavLink>
+                            <div className="learnOrder">
+                                <NavLink className='learn'>Learn</NavLink>
+                                <NavLink className='order'>Order</NavLink>
+                            </div>
+                        </div>
+                        <div className="models">
+                            <NavLink to='/order/model3'><img src={Model3} alt='Model 3' /></NavLink>
+                            <div className="learnOrder">
+                                <NavLink to='/learn/model3' className='learn'>Learn</NavLink>
+                                <NavLink to='/order/model3' className='order'>Order</NavLink>
+                            </div>
+                        </div>
+                        <div className="models">
+                            <NavLink to='/order/modelX'><img src={ModelX} alt='Model X' /></NavLink>
+                            <div className="learnOrder">
+                                <NavLink to='/learn/modelX' className='learn'>Learn</NavLink>
+                                <NavLink to='/order/modelX' className='order'>Order</NavLink>
+                            </div>
+                        </div>
+                        <div className="models">
+                            <NavLink to='/order/modelY'><img src={ModelY} alt='Model Y' /></NavLink>
+                            <div className="learnOrder">
+                                <NavLink to='/learn/modelY' className='learn'>Learn</NavLink>
+                                <NavLink to='/order/modelY' className='order'>Order</NavLink>
+                            </div>
                         </div>
                     </div>
-                    <div className="models">
-                        <NavLink to='/order/model3'><img src={Model3} alt='Model 3' /></NavLink>
-                        <div>
-                            <NavLink to='/learn/model3' className='learn'>Learn</NavLink>
-                            <NavLink to='/order/model3' className='order'>Order</NavLink>
-                        </div>
-                    </div>
-                    <div className="models">
-                        <NavLink to='/order/modelX'><img src={ModelX} alt='Model X' /></NavLink>
-                        <div>
-                            <NavLink to='/learn/modelX' className='learn'>Learn</NavLink>
-                            <NavLink to='/order/modelX' className='order'>Order</NavLink>
-                        </div>
-                    </div>
-                    <div className="models">
-                        <NavLink to='/order/modelY'><img src={ModelY} alt='Model Y' /></NavLink>
-                        <div>
-                            <NavLink to='/learn/modelY' className='learn'>Learn</NavLink>
-                            <NavLink to='/order/modelY' className='order'>Order</NavLink>
-                        </div>
-                    </div>
-                </div> */}
 
                     <div>
                         <div className="drop" id="drop-energy">Energy</div>
@@ -195,7 +195,8 @@ export default function NavBar() {
                     <NavLink to='/teslaaccount'><i class="fa-regular fa-circle-user"></i></NavLink>
                 </div>
             </nav>
-            <div>
+
+            {/* <div>
                 <div className="models-drop">
                     <div className="models">
                         <NavLink to='/order/modelS'><img src={ModelS} alt='Model S' /></NavLink>
@@ -330,7 +331,7 @@ export default function NavBar() {
                         <NavLink to='/order/lifestyle'>Lifestyle</NavLink>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </>
     )
 }
