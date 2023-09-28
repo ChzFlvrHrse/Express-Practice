@@ -54,6 +54,10 @@
     border-radius: .25rem;
 }
 
+.drop:hover #logo {
+    color: black;
+}
+
 #right-bar a {
     color: white;
     font-size: 1.25rem;
